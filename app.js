@@ -16,7 +16,7 @@ function errorHandler(error) {
 function clickShow() {
     let inptxt = inputText.value;
 
-    fetch(fetchTranslateApi)
+    fetch(fetchTranslateApi(inptxt))
     .then(response => response.json())
     .then(json => {
 
